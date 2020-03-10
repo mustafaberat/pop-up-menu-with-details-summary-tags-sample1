@@ -1,0 +1,71 @@
+* {
+  font-family: Roboto, "sans-serif";
+  font-size: 18px;
+}
+
+details {
+  left: 0;
+  display: inline-block;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+details summary {
+  background-color: #fff66e;
+  height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+  width: 100%;
+  min-width: 600px;
+  cursor: pointer;
+  padding: 3px 9px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] > summary:before {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -125;
+  display: block;
+  cursor: default;
+  content: " ";
+}
+
+.body {
+  padding-top: 10px;
+  padding: 4px 12px 8px;
+  width: 610px;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  top: 100%;
+  border: 1px solid #fff66e;
+}
+
+.body a {
+  text-decoration: none;
+  color: #fff66e;
+}
+
+body {
+  background-color: #64a6e8;
+}
+/*# sourceMappingURL=index.css.map */
